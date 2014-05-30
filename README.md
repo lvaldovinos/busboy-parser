@@ -1,7 +1,7 @@
 busboy-parser
 =============
 
-Nodejs module to handle post request using busboy.
+Nodejs module to handles post requests using busboy.
 
 <h2>Application example.</h2>
 
