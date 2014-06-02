@@ -2,7 +2,7 @@ var express = require('express');
 var http = require('http');
 var app = express();
 var router = express.Router();
-var busboyHelper = require('./busboy-parser');
+var busboyHelper = require('./../index');
 var busboy = require('connect-busboy');
 
 app.set('port', 3000);
@@ -39,5 +39,8 @@ var server = http.createServer(app);
 server.listen( app.get('port'), function(){
 	console.log('Server started on port '+ app.get('port'));
 });//server.listen
+
+
+module.exports = server;
 
 
