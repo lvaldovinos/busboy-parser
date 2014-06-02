@@ -1,0 +1,35 @@
+{
+  "name": "bbparser",
+  "version": "0.1.0",
+  "description": "NodeJs module to handle post request using busboy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lvaldovinos/busboy-parser"
+  },
+  "keywords": [
+    "busboy",
+    "parser",
+    "post",
+    "request"
+  ],
+  "author": {
+    "name": "Luis Alonso Valdovinos Valencia",
+    "email": "lastkiss115@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lvaldovinos/busboy-parser/issues"
+  },
+  "homepage": "https://github.com/lvaldovinos/busboy-parser",
+  "dependencies": {
+    "tmp": "0.0.23"
+  },
+  "devDependencies": {
+    "mocha": "^1.20.0",
+    "supertest": "^0.13.0"
+  }
+}
