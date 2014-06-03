@@ -46,7 +46,7 @@ describe('Testing bbparser', function() {
 			.post('/upload')
 			.attach('fileExample', 'nodejs-1024x768.png')
 			.field('fieldExample', 'this is a example')
-			.field('fieldExample', 'another')
+			.field('fieldExample2', 'another')
 			.end(function(err, res) {
 				if (err) return done(err);
 				console.log(res.body);
