@@ -44,7 +44,6 @@ var parseform = function( req, options){
 			}
 		});
 		req.busboy.on('field', function(fieldname, val, fieldnameTruncated, valTruncated) {
-			console.log('field');
 			if(val){
 				rb += Buffer.byteLength(val);
 				req.form.emit('progress', getProgress(rb, eb));
@@ -56,7 +55,6 @@ var parseform = function( req, options){
 			}
 		});
 		req.busboy.on('finish', function() {
-			console.log('finish');
 			req.form.data ={
 				files : files,
 				fields : fields
